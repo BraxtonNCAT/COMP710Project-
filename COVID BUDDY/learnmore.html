@@ -20,11 +20,12 @@
 <!--store.js-->
 <script src="./js/store.js" async></script>
 </head>
+
 <body>
   <header id="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
         <a href="#" class="navbar-brand">
-        <img src="img/dogs/doglogo.png" alt="main icon" class="img-fluid">
+        <img src="img/dogs/doglogo.png" alt="main icon" class="img-fluid" id="logo">
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
             <span class="toggler-icon">
@@ -46,32 +47,91 @@
                 <li class="nav-item">
                     <a href="#terms" class="nav-link">login/signup</a>
                 </li>
-
-
             </ul>
-
         </div>
       </nav>
     </header>
     <!--end of nav-->
 
 
-<!-- Columns are always 50% wide, on mobile and desktop -->
-<div class="container">
-<div class="row">
-  <div class="col-6 dog-facts">
-      <!-- picture of Harley -->
-    <img class="img-responsive center-block"  src="img/dogs/dog3.jpeg" alt="" id="harley">
-    <button type="button" class="btn btn-danger text-white  shadow-sm" id="searchbtn">Inquire About Harley</button>
 
-  </div>
 
-  <div class="col-6 more-info">
+
+
+
+<div class="container-fluid">
+    <div class="row">
+      <!--Hi, Im ... column -->
+        <div class="col-sm-7 col-12 ftext-white py-2 d-flex align-items-center justify-content-center">
+          <div class="container-fluid text-center bg">
+              <img src="img/dogs/dog3.jpeg" alt="harley"class="harley img-fluid">
+              <h1>Hi, I'm Harley!</h1>
+
+              <!--facts about me section-->
+              <div class = "container-fluid mt-5 pt-3 pb-3 border border-dark about-me" style="background-color: #dee5e8; border-style: solid;">
+              <h2 class = "facts"> Facts About Me:</h2>
+              <div class="row col-md-12 mt-5">
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="float-left">Age: 6 years old<br></h3>
+                    <h3 class="float-left">Sex: Male</h3>
+                    <h3 class="float-left">Breed: Beagle Mix</h3>
+                </div>
+                <div class="col-xs-12 col-sm-6" >
+                    <h3 class="float-right">Pet ID: 3556<br></h3>
+                    <h3 class="float-right">Color: Tri-color<br></h3>
+                    <h3 class="float-right">Size: Large</h3>
+                </div>
+            </div>
+        </div>
+        <!--end of facts about me section-->
+
+        <!--search button-->
+        <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
+        <button type="button" class="btn btn-danger text-white btn-block shadow-sm" id="inquirebtn">Inquire About Harley</button>
+        </div>
+
+      </div>
+    </div>
+        <!--end of Hi, Im ... column -->
+
+        <!--more details column -->
+
+        <div class="container-fluid col-sm-5 col-12 details">
+          <div class = "ml-5 mt-5 mb-5">
+          <h2 class="text-center">More Details:</h2>
+          <ul class="m-3 p-3 list-unstyled ml-5" style="font-size:25px">
+            <li><i class="fa fa-paw mr-3"></i>Neutered</li>
+            <li><i class="fa fa-paw mr-3"></i>Good with children</li>
+            <li><i class="fa fa-paw mr-3"></i>Energetic, loving, sweet</li>
+            <li><i class="fa fa-paw mr-3"></i>House-Trained</li>
+            <li><i class="fa fa-paw mr-3"></i>Vaccinations up to date</li>
+
+
+          </ul>
+          <h2 class="pt-3 text-center">Adoption Fee: $200</h2>
+      <!-- Location and Contact information -->
+
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.7125087534414!2d-79.90941904945095!3d36.0517216170741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88531ad83baf4d47%3A0x32d7bc271be794b7!2sGuilford%20County%20Animal%20Shelter!5e0!3m2!1sen!2sus!4v1617516317312!5m2!1sen!2sus" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="row col-md-12 mt-5">
+            <div class="col-xs-12 col-sm-6">
+                <h4 class="float-left text-bold">Location:</h4>
+                <h5 class="float-left">123 Example Street</h5>
+                <h5 class="float-left">Greensboro, NC 12345</h5>
+            </div>
+            <div class="col-xs-12 col-sm-6" >
+                <h4 class="float-right">Contact Information:</h4>
+                <h5 class="float-right">336-111-1111</h5>
+                <h5 class="float-right">covidbuddy@example.com</h5>
+            </div>
+          </div>
+    <!-- end of Location and Contact information -->
+
+          </div>
+        </div>
+        <!--end of more details column -->
 
   </div>
 </div>
-</div>
-
 
 
 
