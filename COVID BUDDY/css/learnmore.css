@@ -11,11 +11,11 @@
 
 body {
     font-family: 'Judson', serif;
-    background: #9ab1a1;
+    background: var(--offWhite);
     color: var(--mainBlack);
+    padding-top: 83px;
 
 }
-
 
 
 .nav-link{
@@ -45,76 +45,44 @@ body {
 }
 /*end of nav links*/
 
-
-
-
-
-.img-fluid{
+/*logo*/
+.img-fluid {
 max-width: 50%;
 height: auto;
 width: auto;
-}
-
-
-.registration {
-  padding-top: 50px;
-
-  padding-bottom: 50px;
 
 }
 
-/*banner pic */
-.dogbanner {
-
-max-width: 100%;
-max-height: 100%;
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-
-
-}
-.dog-facts{
-  background: var(--offWhite);
-  max-height: 1200px;
+/*pic of harley*/
+.harley {
+  border: 7px solid #df4759;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 80px;
+  margin-top: 50px;
 
 }
 
-.dog-facts img {
-
-    width: 120px;
-    height: 90px;
-    margin: auto;
-    display: block;
-
-}
-
-.more-info  {
-    background: var(--seaGreen);
-
+.about-me{
+  background-color: black;
+  width: 700px;
+  border: 7px;
 }
 
 
-/*form titles*/
-
-.form-label{
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Judson", serif;
-  font-size: 26px;
+.map {
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
-/*Find an adoptable pet near you */
-.banner-title {
-  font-size: 50px;
-  letter-spacing: 0px;
-  line-height: 1.2;
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Judson", serif;
+
+.details {
+
+  background-color: #9ab1a1;
+
 }
 
-/*search button */
+/*inquire button */
 .btn {
 border: none;
 padding: 10px 10px;
@@ -122,13 +90,14 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 25px;
+margin-top: 50px;
 }
 
 /*footers */
 
 #footer{ /*fix this it is overriding everything*/
   /*footer background*/
-  background: #000000;
+  background: var(--mainBlack);
 
   /*title colors */
   color: var(--seaGreen);
