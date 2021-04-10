@@ -1,0 +1,86 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+.center-main-box {
+   margin-top: 5rem;
+    /*
+    margin-left: 10rem;
+    margin-right: 10rem;
+    */
+    background-color: beige;
+    border-radius: 25px;
+    
+    height: 55rem;
+    width: 114.5rem;
+    
+}
+
+.vertical-scrollable {
+    position:inherit;
+    top:3rem ;
+    width: 31rem;
+    height: 40rem;
+    overflow-y: scroll; 
+}
+
+.left-block{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    
+    background-color: #9ab1a1;
+    overflow: visible;
+}
+
+.right-block{
+    display: block;
+    margin: auto;
+    padding: 10px;
+   
+    background-color: #9ab1a1;
+    overflow: visible;
+} 
+
+.right-out{
+    background-color: #9ab1a1;
+    border-top-right-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+    box-shadow: .1rem .1rem .5rem #000000;
+    
+}
+
+.left-out{
+    background-color: white;
+    border-top-left-radius: 1.7rem;
+    border-bottom-left-radius: 1.7rem;
+    box-shadow: .1rem .1rem .5rem #000000;
+    
+}
+  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+  .row.content {height: 450px}
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+  }
+  
+  /* Set black background color, white text and some padding */
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  
+  /* On small screens, set height to 'auto' for sidenav and grid */
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+    .row.content {height:auto} 
+      
