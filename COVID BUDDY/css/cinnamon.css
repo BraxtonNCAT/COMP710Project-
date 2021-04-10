@@ -1,0 +1,133 @@
+
+:root{
+
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --offWhite: #f5f5f5;
+    --seaGreen: #9ab1a1;
+
+}
+
+body {
+font-family: 'Trirong', serif;
+    background: var(--offWhite);
+    color: var(--mainBlack);
+    padding-top: 82px;
+    margin:0;
+
+
+}
+
+/*navbar links*/
+.nav-link{
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    align-items: right;
+    padding-left:100px;
+    padding-right: 100px;
+
+}
+/*color for hovering over links*/
+.nav-link:hover{
+    color: #b8cfbe !important;
+}
+
+/*size of logo*/
+@media (min-width: 2000px){
+
+}
+
+.nav-item {
+    padding: 12px;
+}
+
+
+
+/*logo*/
+.img-fluid {
+max-width: 50%;
+height: auto;
+width: auto;
+
+}
+
+/*pic of Finley*/
+.cinnamon {
+  border: 4px solid #D2171E;
+;
+  width: 450px;
+  height: 400px;
+  margin-bottom: 80px;
+  margin-top: 90px;
+}
+
+.about-me{
+  width: 700px;
+  background-color: #e1e1e1;
+  border: 2px solid #000;
+  margin-right:40px;
+
+
+}
+
+
+.map {
+  border: 2px solid black;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  padding-left: 0;
+  width: 550px;
+  height: 350px;
+
+}
+
+
+.details {
+
+  background-color: var(--seaGreen);
+  overflow: visible;
+  padding-bottom: 0px !important;
+  margin-bottom: 0;
+  color: #000;
+
+
+}
+
+/*inquire button */
+.btn {
+border: none;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin-top: 50px;
+margin-bottom: 80px;
+background-color: #D2171E;
+}
+
+.btn:hover{
+
+  background-color: #9E1116;
+}
+.info-lc {
+
+  padding-top: 70px;
+}
+
+/*footer */
+#footer {
+  /*footer background*/
+  background: #000;
+
+  /*title colors */
+  color: #d4d4d4;
+  width: 100%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin-top: 0;
+   display: inline-block;
+
+}
