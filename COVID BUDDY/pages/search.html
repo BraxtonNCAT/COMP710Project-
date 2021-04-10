@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Covid Buddy</title>
+<!-- bootstrap css -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<!--font awesome -->
+<script src="./js/all.js"></script>
+<link rel="stylesheet" href="./css/all.min.css">
+
+<!--Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+
+
+<!-- main css-->
+<link rel="stylesheet" href="./css/search.css">
+<!--store.js-->
+<script src="./js/store.js" async></script>
+</head>
+<body>
+  <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <a href="#" class="navbar-brand">
+        <img src="img/dogs/doglogo.png" alt="main icon" class="img-fluid">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+            <span class="toggler-icon">
+            </span>
+        </button>
+
+
+        <div class="collapse navbar-collapse mx-auto" id="myNavbar">
+            <ul class="navbar-nav text-capitalize mx-auto">
+                <li class="nav-item active mx-auto">
+                    <a href="#header" class="nav-link">home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="#about" class="nav-link">adoption center</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#license" class="nav-link">contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#terms" class="nav-link">login/signup</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+      </nav>
+    <!--end of nav-->
+
+
+    <!--banner-->
+    <div class="banner mx-auto"  >
+            <img class="dogbanner pt-5" id="dogbanner" src="img/dogs/dogbanner.jpg" alt="" >
+
+    </div>
+
+    <!--end of banner-->
+
+  </header>
+<!--end of header-->
+
+
+
+<section class="registration" id="registration">
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+        <h1 class="text-capitalize text-black"><strong class="banner-title">FIND AN ADOPTABLE PET NEAR YOU </strong></h1>
+        </div>
+</section>
+
+
+<div class="container mt-3">
+  <form>
+    <!-- Location input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form6Example3">Location:</label>
+
+      <input type="text" id="dogform" class="border border-dark form-control form-control-lg" placeholder="ZIP/Postal or City, State"/>
+    </div>
+
+
+    <!-- 2 column grid layout with text inputs for the age and color-->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label for="dogform" class="form-label">Age:</label>
+            <select class="border border-dark form-control form-control-lg" id="age_id">
+              <option selected>Any</option>
+              <option value="puppy">Puppy</option>
+              <option value="young">Young</option>
+              <option value="adult">Adult</option>
+              <option value="senior">Senior</option>
+          </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dogform">Color:</label>
+          <select class="border border-dark form-control form-control-lg" id="color_id">
+            <option selected>Any</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="brownorchoc">Brown or Chocolate</option>
+            <option value="tanoryellow">Tan/Yellow</option>
+            <option value="tricolor">Tri-Color</option>
+            <option value="rgoc">Red/Golden/Orange/Chestnut</option>
+        </select>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- 2 column grid layout with text inputs for the sex and breed-->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label for="dogform" class="form-label">Sex:</label>
+          <select class="border border-dark form-control form-control-lg" id="sex_id">
+            <option selected>Any</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dogform">Breed:</label>
+          <select class="border border-dark form-control form-control-lg" id="breed_id">
+            <option selected>Any</option>
+            <option value="labretriver">Labrador Retriever</option>
+            <option value="germanshep">German Shepherd</option>
+            <option value="goldenretriever">Golden Retriever</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="frenchbulldog">French Bulldog</option>
+            <option value="poodle">Poodle</option>
+            <option value="beagle">Beagle</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="corgi">Welsh Corgi</option>
+            <option value="dachshund">Dachshund</option>
+            <option value="yorkie">Yorkshire Terrier</option>
+            <option value="aussie">Australian Shepherd</option>
+            <option value="boxer">Boxer</option>
+            <option value="husky">Siberian Husky</option>
+            <option value="cockerspaniel">Cocker Spaniel</option>
+            <option value="greatdane">Great Dane</option>
+            <option value="schnauzer">Miniature Schnauzer</option>
+            <option value="pinscher">Doberman Pinscher</option>
+            <option value="shihtzu">Shih Tzu</option>
+            <option value="bostonterrier">Boston Terrier</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="bernese">Bernese Mountain Dog</option>
+            <option value="charlesspaniel">Cavalier King Charles Spaniel</option>
+            <option value="pug">Pug</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="maltese">Maltese</option>
+        </select>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 2 column grid layout with text inputs for the size-->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="dogform">Size:</label>
+          <select class="border border-dark form-control form-control-lg" id="size_id">
+            <option selected>Any</option>
+            <option value="small">Small (25 lbs or less)</option>
+            <option value="medium">Medium (26 lbs to 60 lbs)</option>
+            <option value="large">Large (61 lbs to 100 lbs)</option>
+            <option value="xlarge">X-Large (101 lbs or more)</option>
+        </select>
+        </div>
+      </div>
+      <div class="col">
+
+      </div>
+    </div>
+
+<!--image of small dog -->
+    <div class="container-fluid dog">
+      <img class="dog-image mt-0 pt-0 mb-5"src="img/dogs/sleepingdog.png" alt="">
+    </div>
+
+
+<!--search button-->
+    <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
+<button type="button" class="btn text-white btn-block shadow-sm" id="searchbtn">Search</button>
+</div>
+
+
+
+
+<!--footer-->
+<footer>
+<div class="container-fluid mt-5 pt-4 pb-0" id="footer">
+  <div class="row">
+    <div class="col-lg-8 col-xs-12 about-company">
+      <h2>About Covid Buddy</h2>
+      <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+      <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+    </div>
+
+    <div class="col-lg-4 col-xs-12 location">
+      <h2 class="mt-lg-0 mt-sm-4">Contact Information</h2>
+      <p>Location: Lorem ipsum dolor, consectetur adipiscing</p>
+      <p class="mb-0">
+        <i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+      <p><i class="fa fa-envelope mr-3"></i>covidbuddy@email.com</p>
+    </div>
+  </div>
+  <div class="row mt-0">
+    <div class="col copyright">
+      <p class=""><small class="text-white-50"> © 2021. All Rights Reserved.</small></p>
+    </div>
+  </div>
+</div>
+</footer>
+<!--end of footer -->
+
+<!--jquery-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--bootstrap js-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<!--script js-->
+<script src="js/app.js"></script>
+</body>
+</html>
