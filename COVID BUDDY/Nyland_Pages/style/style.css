@@ -4,47 +4,28 @@
     border-radius: 0;
   }
 
-.center-main-box {
-   margin-top: 5rem;
-    /*
-    margin-left: 10rem;
-    margin-right: 10rem;
-    */
-    background-color: beige;
-    border-radius: 25px;
-    
-    height: 55rem;
-    width: 114.5rem;
-    
+.body-block{
+    background-color:#F5F5F5
 }
 
-.vertical-scrollable {
-    position:inherit;
-    top:3rem ;
-    width: 31rem;
-    height: 40rem;
-    overflow-y: scroll; 
+.main-box{
+    margin-top: 5rem;
 }
 
-.left-block{
-    display: block;
-    margin: auto;
-    padding: 10px;
-    
-    background-color: #9ab1a1;
-    overflow: visible;
+.login-img{
+    background-image: url(../images/dog_login.jpg);
+    background-repeat: no-repeat;
+    background-size: 75rem;
 }
 
-.right-block{
-    display: block;
-    margin: auto;
-    padding: 10px;
-   
-    background-color: #9ab1a1;
-    overflow: visible;
-} 
+.left-box{
+    background-color: white;
+    border-top-left-radius: 1.7rem;
+    border-bottom-left-radius: 1.7rem;
+    box-shadow: .1rem .1rem .5rem #000000;  
+}
 
-.right-out{
+.right-box{
     background-color: #9ab1a1;
     border-top-right-radius: 1.7rem;
     border-bottom-right-radius: 1.7rem;
@@ -52,13 +33,6 @@
     
 }
 
-.left-out{
-    background-color: white;
-    border-top-left-radius: 1.7rem;
-    border-bottom-left-radius: 1.7rem;
-    box-shadow: .1rem .1rem .5rem #000000;
-    
-}
   /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
   .row.content {height: 450px}
   
