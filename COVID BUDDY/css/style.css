@@ -1,12 +1,4 @@
-body {
-
-  font-family: 'Trirong', serif;
-}
 /* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-  }
 
 .body-block{
     background-color:#F5F5F5
@@ -17,7 +9,7 @@ body {
 }
 
 .login-img{
-    background-image: url("../images/dog_login.jpg");
+    background-image: url(../images/dog_login.jpg);
     background-repeat: no-repeat;
     background-size: 75rem;
 }
@@ -47,14 +39,29 @@ body {
     height: 100%;
   }
 
-.title {
-  text-shadow: 5px 5px white;
-}
-  /* Set black background color, white text and some padding */
-  footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
+  .map {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-left: 0;
+    width: 425px;
+    height: 350px;
+
+  }
+  /*footer */
+  #footer {
+    /*footer background*/
+    background: #000;
+
+    /*title colors */
+    color: #d4d4d4;
+    width: 100%;
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin-top: 0;
+     display: inline-block;
+
   }
 
   /* On small screens, set height to 'auto' for sidenav and grid */
@@ -62,19 +69,4 @@ body {
     .sidenav {
       height: auto;
       padding: 15px;
-    }
-    .row.content {height:auto}
-
-    #footer{
-      /*footer background*/
-      background: #000;
-
-      /*title colors */
-    color: #d4d4d4;
-      width: 100%;
-       position: absolute;
-       left: 0;
-       right: 0;
-       width: 100%;
-
     }
