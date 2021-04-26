@@ -1,0 +1,151 @@
+
+:root{
+
+    --mainWhite: #fff;
+    --mainBlack: #000;
+    --offWhite: #f5f5f5;
+    --seaGreen: #9ab1a1;
+
+}
+
+body {
+    font-family: 'Trirong', serif;
+    background: #f5f5f5;
+    color: black;
+
+}
+
+/*navbar links*/
+.nav-link{
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+    align-items: right;
+    padding-left:100px;
+    padding-right: 100px;
+
+}
+
+/*color for hovering over links*/
+.nav-link:hover{
+    color: #b8cfbe !important;
+}
+
+/*size of logo*/
+@media (min-width: 2000px){
+
+}
+
+.nav-item {
+    padding: 12px;
+}
+
+/*end of nav links*/
+.img-fluid{
+max-width: 50%;
+height: auto;
+width: auto;
+}
+
+
+.title{
+  padding-top: 50px;
+
+  padding-bottom: 50px;
+
+}
+
+/*banner pic */
+.familybanner {
+
+height: 1000px;
+width: auto;
+background-image: url("../img/dogs/happy-family.jpeg");
+background-repeat: no-repeat;
+background-position: center;
+color: red;
+}
+
+.section-heading {
+  color: white;
+  text-shadow: 5px 5px black;
+  font-size: 100px;
+  font-weight: 900;
+  padding-top: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*form titles*/
+
+.form-label{
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Judson", serif;
+  font-size: 26px;
+}
+
+/*Find an adoptable pet near you */
+.banner-title {
+  font-size: 50px;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Judson", serif;
+}
+
+
+.dog {
+float: right;
+}
+
+
+.dog-image {
+  border-radius: 30%;
+  position: absolute;
+  bottom: -665px;
+  right: 100px;
+  width: 600px;
+  height: 280px;
+}
+
+
+
+/*search button */
+.btn {
+border: none;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 25px;
+margin-top: 60px;
+background-color: #D2171E;
+margin: 0 auto;
+
+
+}
+
+.btn:hover{
+
+  background-color: #9E1116;
+}
+
+/*footer */
+
+#footer{
+  /*footer background*/
+  background: #000;
+
+  /*title colors */
+color: #d4d4d4;
+  width: 100%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   width: 100%;
+
+}
