@@ -1,5 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+
+$servername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "COVID_BUDDY";
+
+
+// Create Connection
+$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
+
+if(!$conn){
+    die("Connection failed: ".mysqli_connect_error());
+}
+?><html lang="en">
 
 <head>
     <title>Covid Buddies - User Registration</title>
@@ -25,24 +38,24 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-4 left-box">
-                        <h1 style="text-align:center; padding-top: 1.8rem;">User Registration</h1>
+                        <h1 style="text-align:center; padding-top: 1.8rem;">Login</h1>
                         <br>
                         <div class="container">
                             <div class="row">
                                 <div class="col-1"></div>
                                 <div class="col">
                                     <div class="" style="margin-top: 3.5rem">
-                                        <form>
+                                        <form action="login_verify.php" method="post">
                                             <div class="form-row">
                                                 <div class="form-group col">
                                                     <label for="username">Username</label>
-                                                    <input type="text" class="form-control" placeholder="Enter Username" name="username" required>
+                                                    <input type="text" class="form-control" placeholder="Enter Username" name="Uname" required>
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col">
                                                     <label for="psw">Password</label>
-                                                    <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+                                                    <input type="password" class="form-control" placeholder="Enter Password" name="Password" required>
                                                 </div>
                                             </div>
                                             <div class="form-check">
@@ -56,7 +69,7 @@
                                                         <div class="col">
                                                         </div>
                                                         <div class="col text-center">
-                                                            <a href="../index.html" role="button" class="btn btn-primary container-fluid">Login</a>
+                                                            <button type="submit" class="btn btn-primary" name="report-submit" style="display: table; margin: 0 auto;">Submit</button> 
                                                         </div>
                                                         <div class="col">
                                                         </div>
@@ -68,7 +81,7 @@
                                     <div class="container-fluid">
                                         <div class="row">
                                             <div class="col">
-                                                <h5 style="text-align:center; padding-top: 1.8rem;"> Don't have an account? Sign Up <a class="btn btn-link" href="demo.html" style="font-size: 1.3rem">Here</a>
+                                                <h5 style="text-align:center; padding-top: 1.8rem;"> Don't have an account? Sign Up <a class="btn btn-link" href="registration.php" style="font-size: 1.3rem">Here</a>
                                                 </h5>
                                             </div>
                                         </div>

@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+<?php
+
+$servername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "COVID_BUDDY";
+
+
+// Create Connection
+$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
+
+if(!$conn){
+    die("Connection failed: ".mysqli_connect_error());
+}
+?>
 <html lang="en">
 
 <head>
@@ -37,33 +51,33 @@
                                 <div class="col-1"></div>
                                 <div class="col">
                                     <div class="" style="margin-top: 3.5rem">
-                                        <form>
+                                        <form action="reg_add.php" method="post">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputEmail">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="regEmail" required>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputPassword">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password" name="regPassword" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAddress">Username</label>
-                                                <input type="text" class="form-control" id="username" placeholder="Username">
+                                                <input type="text" class="form-control" id="username" placeholder="Username" name="regUname" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAddress">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="regAddress" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputAddress2">Address 2</label>
-                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" name="regAddress2">
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputCity">City</label>
-                                                    <input type="text" class="form-control" id="inputCity">
+                                                    <input type="text" class="form-control" id="inputCity" name="regCity" required>
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="inputState">State</label>
@@ -74,15 +88,15 @@
                                                 </div>
                                                 <div class="form-group col-md-2">
                                                     <label for="inputZip">Zip</label>
-                                                    <input type="text" class="form-control" id="inputZip">
+                                                    <input type="text" class="form-control" id="inputZip" name="regZip" required>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputState">Adoptee or Pound?</label>
-                                                <select id="inputState" class="form-control">
+                                                <label for="inputState">Adoptee or Shelter?</label>
+                                                <select id="inputState" class="form-control" name="regType">
                                                     <option selected>Choose...</option>
                                                     <option>Adoptee</option>
-                                                    <option>Pound</option>
+                                                    <option>Shelter</option>
                                                 </select>
                                             </div>
                                             <div class="form-row">
@@ -92,7 +106,7 @@
                                                         <div class="col-3">
                                                         </div>
                                                         <div class="col-6 text-center">
-                                                            <a href="../index.html" role="button" class="btn btn-primary container-fluid">Create Account</a>
+                                                            <button type="submit" class="btn btn-primary container-fluid" name="report-submit" style="display: table; margin: 0 auto;">Register</button> 
                                                         </div>
                                                         <div class="col-3">
                                                         </div>

@@ -94,9 +94,7 @@ float: right;
 .dog-image {
   border-radius: 30%;
   position: absolute;
-  bottom: -550px;
-  right: 100px;
-  width: 600px;
+  width: 650px;
   height: 280px;
 }
 /*search button */
